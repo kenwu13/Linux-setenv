@@ -2,10 +2,6 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 
-Date=$(date +%Y%m%d)
-NowTime=$(date +%H:%M)
-LogFile=
-
 URL1=https://github.com/kenwu13/Linux.git
 URL2=https://github.com/robbyrussell/oh-my-zsh.git
 theme=kenwu.zsh-theme
@@ -23,8 +19,8 @@ mv ./Linux/${theme} ~/.oh-my-zsh/themes
 
 for cnt in $(seq 1 3)
 do
-	mv ./Linux/${SET[${cnt}]} ~/.${SET[${cnt}]}
+	mv ./Linux-setenv/${SET[${cnt}]} ~/.${SET[${cnt}]}
 done
 
-rm -rf ./Linux
+rm -rf ./Linux-setenv
 rm -rf ./oh-my-zsh
