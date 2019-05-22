@@ -1,8 +1,8 @@
 # Linux-setenv For LMDE3
-git clone https://github.com/kenwu13/Linux-setenv.git
+$ git clone https://github.com/kenwu13/Linux-setenv.git
 
-cd Linux-setenv
+$ cd Linux-setenv
 
-chmod +x setenv.sh
+$ chmod +x setenv.sh
 
-./setenv.sh
+$ ./setenv.sh
